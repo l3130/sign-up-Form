@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f6f7f9;
+    color: #222;
+    min-height: 100vh;
+    
+}
+.container {
+ display: flex;
+ min-height: 100vh;
+}
+.sidebar {
+    background: url('fern.jpg') no-repeat center center/cover;
+    color: #fff;
+    width: 40%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    position: relative;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    background: rgba(0,0,0,0.4);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+.logo img {
+    width: auto;
+    height: 60px;
+    
+}
+.logo span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-family: 'Cinzel', serif;
+}
+.photo-credit {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    font-size: 0.9rem;
+    background: rgba(0,0,0,0.3);
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    color: #eee;
+}
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem 4rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.04);
+}
+.intro {
+    margin-bottom: 2rem;
+}
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+.signup-form {
+    width: 100%;
+    max-width: 520px;
+    background: #f9fafb;
+    padding: 2rem 2.5rem 2rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    color: #333;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-size: 0.98rem;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #555;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    background: #fff;
+}
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input:invalid {
+    border-color: #dc3545;
+}
+.create-account {
+    width: 100%;
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(90,125,78,0.08);
+    cursor: pointer;
+    margin-top: 0.7em;
+    transition: background 0.3s;
+}
+.create-account:hover {
+    background: #46623b;
+}
+.logo-link {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    text-align: center;
+}
+.logo-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+.logo-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        min-width: unset;
+        min-height: 220px;
+        padding: 2rem 1rem;
+    }
+    .main {
+        padding: 2rem 1rem;
+        
+    }
+    .signup-form {
+        
+        padding: 2rem 1rem;
+    }
+    
+}
